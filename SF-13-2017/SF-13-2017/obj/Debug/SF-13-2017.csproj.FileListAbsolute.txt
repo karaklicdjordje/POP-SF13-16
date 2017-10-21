@@ -1,0 +1,7 @@
+C:\Users\TEMP.FTN.006\Desktop\SF-13-2016\POP-SF13-16\SF-13-2017\SF-13-2017\bin\Debug\SF-13-2017.exe.config
+C:\Users\TEMP.FTN.006\Desktop\SF-13-2016\POP-SF13-16\SF-13-2017\SF-13-2017\bin\Debug\SF-13-2017.exe
+C:\Users\TEMP.FTN.006\Desktop\SF-13-2016\POP-SF13-16\SF-13-2017\SF-13-2017\bin\Debug\SF-13-2017.pdb
+C:\Users\TEMP.FTN.006\Desktop\SF-13-2016\POP-SF13-16\SF-13-2017\SF-13-2017\obj\Debug\SF-13-2017.csprojResolveAssemblyReference.cache
+C:\Users\TEMP.FTN.006\Desktop\SF-13-2016\POP-SF13-16\SF-13-2017\SF-13-2017\obj\Debug\SF-13-2017.csproj.CoreCompileInputs.cache
+C:\Users\TEMP.FTN.006\Desktop\SF-13-2016\POP-SF13-16\SF-13-2017\SF-13-2017\obj\Debug\SF-13-2017.exe
+C:\Users\TEMP.FTN.006\Desktop\SF-13-2016\POP-SF13-16\SF-13-2017\SF-13-2017\obj\Debug\SF-13-2017.pdb

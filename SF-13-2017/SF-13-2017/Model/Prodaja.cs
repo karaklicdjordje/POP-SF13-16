@@ -16,6 +16,9 @@ namespace SF_13_2017.Model
 
         public const double PDV = 0.02;
         public double UkupnaCena { get; set; }
+
+
+        /// PROBASDaSDA
     }
 }
 

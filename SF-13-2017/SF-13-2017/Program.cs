@@ -7,21 +7,25 @@ using System.Threading.Tasks;
 
 namespace SF_13_2017
 {
-    class Program
+    public class Program
     {
         private static List<Namestaj> Namestaj = new List<Namestaj>();
         private static List<TipNamestaja> TipoviNamestaja = new List<TipNamestaja>();
-        static void Main(string[] args)
+
+        public static void Main(string[] args)
         {
+            /*
+             * 
+             * 
             Salon s1 = new Salon()
             {
                 Id = 1,
                 Adresa = "Trg Dositeja Obradovica 6",
                 BrojZiroRacuna = "840-000171666-45",
                 Email = "dekan@ftn.uns.ac.rs",
-                MaticniBroj = 324324324,
+                MaticniBroj = "324324324",
                 Naziv = "Forma FTNale",
-                PIB = 123213,
+                PIB = "123213",
                 Telefon = "021/454-3434",
                 WebSajt = "http://www.ftn.uns.ac.rs"
             };
@@ -31,22 +35,31 @@ namespace SF_13_2017
                 Id = 1,
                 Naziv = "Krevet"
             };
+
             var namestaj1 = new Namestaj()
             {
                 Id = 1,
                 Cena = 777,
-                TipNamestaja = tp1,
+                TipNamestajaID = tp1.Id,
                 Naziv = "Ekstra krevet socijalni",
                 KolicinaUMagacinu = 100,
                 Sifra = "KR3993434SC",
 
             };
-            Namestaj.Add(namestaj1);
+            */
+            //    List<TipNamestaja> lista = new List<TipNamestaja>();
+            //    lista.Add(tp1);
+            //    Projekat.Instanca.TipoviNamestajaLista = lista;
 
-            Console.WriteLine($"===== Dobrodosli u salon namestaja {s1.Naziv}=====");
-            Console.ReadLine();
+            //List<Namestaj> lista = new List<Namestaj>();
+            //lista.Add(namestaj1);
+            //Projekat.Instanca.NamestajLista = lista;
+
+
+
         }
 
+        /*
         private static void IspisiGlavniMeni()
         {
             int izbor = 0;
@@ -136,5 +149,6 @@ namespace SF_13_2017
             Console.WriteLine("4. Obrisi postojeci");
             Console.WriteLine("0. Povratak na glavni meni");
         }
+        */
     }
 }

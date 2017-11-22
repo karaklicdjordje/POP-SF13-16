@@ -14,8 +14,8 @@ namespace SF_13_2017.Model
         public string Telefon { get; set; }
         public string Email { get; set; }
         public string WebSajt { get; set; }
-        public int PIB { get; set; }
-        public int MaticniBroj { get; set; }
+        public string PIB { get; set; }
+        public string MaticniBroj { get; set; }
         public string BrojZiroRacuna { get; set; }
         public bool Obrisan { get; set; }
     }

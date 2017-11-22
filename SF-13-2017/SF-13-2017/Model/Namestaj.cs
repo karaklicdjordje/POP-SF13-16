@@ -13,8 +13,8 @@ namespace SF_13_2017.Model
         public string Sifra { get; set; }
         public double Cena { get; set; }
         public int KolicinaUMagacinu { get; set; }
-        public Akcija Akcija { get; set; }
-        public TipNamestaja TipNamestaja { get; set; }
+        public int AkcijaID { get; set; }
+        public int TipNamestajaID { get; set; }
 
         public bool Obrisan { get; set; }
     }

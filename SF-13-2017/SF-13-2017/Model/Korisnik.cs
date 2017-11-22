@@ -15,7 +15,7 @@ namespace SF_13_2017.Model
 
 
 
-    class Korisnik
+    public class Korisnik
     {
         public int Id { get; set; }
         public string Ime { get; set; }

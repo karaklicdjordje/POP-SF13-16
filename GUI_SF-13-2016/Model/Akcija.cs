@@ -8,6 +8,7 @@ namespace SF_13_2017.Model
 { 
     public class Akcija //asdasdasdsdad
     {
+        //asdasdas
         public int Id{ get; set; }
         public DateTime DatumPocetka { get; set; }
         public decimal Popust { get; set; }

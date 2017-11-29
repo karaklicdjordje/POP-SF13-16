@@ -1,5 +1,9 @@
-﻿using System;
+﻿using GUI_SF_13_2016.DAL;
+using SF_13_2017.Model;
+using SF_13_2017.Utils;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,19 +23,50 @@ namespace GUI_SF_13_2016.GUI
     /// </summary>
     public partial class Login : Window
     {
+        string korisnickoIme;
+        string lozinka;
+
+        Korisnik ulogovaniKorisnik = null;
+
+        int brojPokusaja;
+
         public Login()
         {
             InitializeComponent();
+            brojPokusaja = 0;
         }
 
         private void btPotvrdi_Click(object sender, RoutedEventArgs e)
         {
-            string korisnickoIme = tbKorisnickoIme.Text;
-            string lozinka = tbLozinka.Text;
+            korisnickoIme = tbKorisnickoIme.Text;
+            lozinka = tbLozinka.Text;
 
-            //List<Korisnik>
-            MessageBox.Show("Ulogovan!!!!");
+            foreach(Korisnik k in RadSaKorisnik.GetList())
+            {
+                if(k.KorisnickoIme == korisnickoIme && k.Lozinka == lozinka)
+                {
+                    //ULOGOVAN!!!
+                    ulogovaniKorisnik = k;
+                    break;
+                }
+            }
 
+            if(ulogovaniKorisnik != null)
+            {
+                MainWindow mw = new MainWindow();
+                mw.Show();
+                this.Close();
+            }
+            else if (brojPokusaja >= 2)
+            {
+                MessageBox.Show("Promasili ste 3 puta!!!", "!!!", MessageBoxButton.OK, MessageBoxImage.Error);
+                Close();
+            }
+            else
+            {
+                MessageBox.Show("Netacni podaci!!!", "!!!", MessageBoxButton.OK, MessageBoxImage.Error);
+                brojPokusaja++;
+            }
         }
     }
 }

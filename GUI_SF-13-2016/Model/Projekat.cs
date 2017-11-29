@@ -1,6 +1,7 @@
 ﻿using SF_13_2017.Utils;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,15 +12,15 @@ namespace SF_13_2017.Model
     {
         public static Projekat Instanca { get; private set; } = new Projekat();
         
-        private List<TipNamestaja> tipoviNamestajaLista;
-        private List<Namestaj> namestajLista;
-        private List<Akcija> akcijeLista;
-        private List<DodatneUsluge> dodatneUslugeLista;
-        private List<Korisnik> korisniciLista;
-        //private List<ProdajaNamestaja> ProdajaNamestajaLista;
-        private List<Salon> salonLista;
+        private ObservableCollection<TipNamestaja> tipoviNamestajaLista;
+        private ObservableCollection<Namestaj> namestajLista;
+        private ObservableCollection<Akcija> akcijeLista;
+        private ObservableCollection<DodatneUsluge> dodatneUslugeLista;
+        private ObservableCollection<Korisnik> korisniciLista;
+        private ObservableCollection<Prodaja> prodajaNamestajaLista;
+        private ObservableCollection<Salon> salonLista;
 
-        public List<TipNamestaja> TipoviNamestajaLista
+        public ObservableCollection<TipNamestaja> TipoviNamestajaLista
         {
             get
             {
@@ -33,7 +34,7 @@ namespace SF_13_2017.Model
             }
         }
 
-        public List<Namestaj> NamestajLista
+        public ObservableCollection<Namestaj> NamestajLista
         {
             get
             {
@@ -47,7 +48,7 @@ namespace SF_13_2017.Model
             }
         }
 
-        public List<Akcija> AkcijeLista
+        public ObservableCollection<Akcija> AkcijeLista
         {
             get
             {
@@ -61,7 +62,7 @@ namespace SF_13_2017.Model
             }
         }
 
-        public List<DodatneUsluge> DodatneUslugeLista
+        public ObservableCollection<DodatneUsluge> DodatneUslugeLista
         {
             get
             {
@@ -75,7 +76,7 @@ namespace SF_13_2017.Model
             }
         }
 
-        public List<Korisnik> KorisniciLista
+        public ObservableCollection<Korisnik> KorisniciLista
         {
             get
             {
@@ -89,23 +90,23 @@ namespace SF_13_2017.Model
             }
         }
 
-        /*
-        public List<ProdajaNamestaja> ProdajaNamestaja
+        
+        public ObservableCollection<Prodaja> ProdajaNamestaja
         {
             get
             {
-                ProdajaNamestajaLista = GenericSerializer.Deserialize<ProdajaNamestaja>("prodaja_namestaja.xml");
-                return ProdajaNamestajaLista;
+                prodajaNamestajaLista = GenericSerializer.Deserialize<Prodaja>("prodaja_namestaja.xml");
+                return prodajaNamestajaLista;
             }
             set
             {
-                ProdajaNamestajaLista = value;
-                GenericSerializer.Serialize<ProdajaNamestaja>("prodaja_namestaja.xml", ProdajaNamestajaLista);
+                prodajaNamestajaLista = value;
+                GenericSerializer.Serialize<Prodaja>("prodaja_namestaja.xml", prodajaNamestajaLista);
             }
         }
-        */
+        
 
-        public List<Salon> SalonLista
+        public ObservableCollection<Salon> SalonLista
         {
             get
             {
